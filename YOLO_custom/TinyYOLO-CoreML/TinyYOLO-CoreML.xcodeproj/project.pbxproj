@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1580AF7F26C36710003E1A76 /* TinySnackModel4.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1580AF7E26C36710003E1A76 /* TinySnackModel4.mlmodel */; };
-		15F844E126C5F00100B28D86 /* TinySnackModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 15F844E026C5F00100B28D86 /* TinySnackModel.mlmodel */; };
 		7B9F8D4A1EF2CDA700F913BD /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F8D491EF2CDA700F913BD /* Helpers.swift */; };
 		7BA1C6D01EF27DA000BB25EF /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC25FB51EF27C0D002ECBBA /* VideoCapture.swift */; };
 		7BA1C6D21EF2827800BB25EF /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA1C6D11EF2827500BB25EF /* UIImage+CVPixelBuffer.swift */; };
@@ -24,8 +22,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1580AF7E26C36710003E1A76 /* TinySnackModel4.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TinySnackModel4.mlmodel; sourceTree = "<group>"; };
-		15F844E026C5F00100B28D86 /* TinySnackModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = TinySnackModel.mlmodel; path = ../../../../Downloads/TinySnackModel.mlmodel; sourceTree = "<group>"; };
 		7B9F8D491EF2CDA700F913BD /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = ../../Common/Helpers.swift; sourceTree = "<group>"; };
 		7BA1C6D11EF2827500BB25EF /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
 		7BA1C6D51EF2861400BB25EF /* BoundingBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoundingBox.swift; path = ../../Common/BoundingBox.swift; sourceTree = "<group>"; };
@@ -81,8 +77,6 @@
 				7BC25FAD1EF1B7D1002ECBBA /* Info.plist */,
 				7BC25FA51EF1B7D1002ECBBA /* Main.storyboard */,
 				7BC25FB31EF1CEAE002ECBBA /* TinyYOLO.mlmodel */,
-				1580AF7E26C36710003E1A76 /* TinySnackModel4.mlmodel */,
-				15F844E026C5F00100B28D86 /* TinySnackModel.mlmodel */,
 				7BA1C6D11EF2827500BB25EF /* UIImage+CVPixelBuffer.swift */,
 				7BC25FB51EF27C0D002ECBBA /* VideoCapture.swift */,
 				7BC25FA31EF1B7D1002ECBBA /* ViewController.swift */,
@@ -163,10 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1580AF7F26C36710003E1A76 /* TinySnackModel4.mlmodel in Sources */,
 				7BA1C6D01EF27DA000BB25EF /* VideoCapture.swift in Sources */,
 				7BA1C6DA1EF2B30200BB25EF /* CVPixelBuffer+Helpers.swift in Sources */,
-				15F844E126C5F00100B28D86 /* TinySnackModel.mlmodel in Sources */,
 				7BC25FB41EF1CEB0002ECBBA /* TinyYOLO.mlmodel in Sources */,
 				7BA1C6D21EF2827800BB25EF /* UIImage+CVPixelBuffer.swift in Sources */,
 				7B9F8D4A1EF2CDA700F913BD /* Helpers.swift in Sources */,

@@ -17,8 +17,8 @@ class YOLO {
     let rect: CGRect
   }
 
-//  let model = TinyYOLO()
-    let model = TinySnackModel()
+  let model = TinyYOLO()
+//    let model = TinySnackModel4()
 
   public init() { }
 
@@ -31,15 +31,15 @@ class YOLO {
 //  }
     public func predict(image: CVPixelBuffer) -> [Prediction]? {
         if let output = try? model.prediction(image: image) {
-            return computeBoundingBoxes(features: output.output1)
+            return computeBoundingBoxes(features: output.grid)
       } else {
         return nil
       }
     }
     
   public func computeBoundingBoxes(features: MLMultiArray) -> [Prediction] {
-//    assert(features.count == 125*13*13)
-    assert(features.count == 30*13*13)
+    assert(features.count == 125*13*13)
+//    assert(features.count == 30*13*13)
 
     var predictions = [Prediction]()
 

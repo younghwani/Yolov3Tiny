@@ -8,8 +8,9 @@
 final_model_path = 'trained_weights_final.h5'
 classes_path = 'classes.txt'
 anchors_path = 'model_data/yolo_anchors.txt'
-final_model_dir = '/Users/kyh/GitHub/Yolov3Tiny/tinySnackModel.h5'
-coreml_model_dir = 'TinySnackModel.mlmodel'
+# final_model_dir = '/Users/kyh/GitHub/Yolov3Tiny/tinySnackModel.h5'
+final_model_dir = '/Users/kyh/GitHub/Yolov3Tiny/TinySnackModel.h5'
+coreml_model_dir = 'TinySnackModel8.mlmodel'
 #
 # import tensorflow as tf
 # from yolo import YOLO
@@ -27,19 +28,18 @@ coreml_model_dir = 'TinySnackModel.mlmodel'
 # model.summary()
 
 ## 1, 2
-# import coremltools
-# coreml_model = coremltools.converters.keras.convert(final_model_dir,
-#                                                     image_input_names='image',
-#                                                     input_names='image',
-#                                                     input_name_shape_dict={'image':[None, 416, 416, 3]},
-#                                                     output_names=['output1', 'output2'],
-#                                                     image_scale=1/255.0)
-# coreml_model.author = 'younghwankim'
-# coreml_model.short_description = 'Snack Recognition Model'
-# coreml_model.input_description['image'] = 'Takes as input an image of a snack'
+import coremltools
+coreml_model = coremltools.converters.keras.convert(final_model_dir,
+                                                    image_input_names='image',
+                                                    input_names='image',
+                                                    input_name_shape_dict={'image':[None, 416, 416, 3]},
+                                                    image_scale=1/255.0)
+coreml_model.author = 'younghwankim'
+coreml_model.short_description = 'Snack Recognition Model'
+coreml_model.input_description['image'] = 'Takes as input an image of a snack'
 # coreml_model.output_description['output1'] = '13 * 13 * 30'
 # coreml_model.output_description['output2'] = '26 * 26 * 30'
-# coreml_model.save(coreml_model_dir)
+coreml_model.save(coreml_model_dir)
 
 #
 # import coremltools
